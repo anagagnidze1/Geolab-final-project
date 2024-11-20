@@ -1,0 +1,525 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+header {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+header img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+
+}
+
+header nav {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 1200px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.navigation {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-cont {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    overflow: hidden;
+    height: auto;
+}
+
+.logo-cont img {
+    width: 30px;
+    height: 40px;
+    display: block; 
+}
+
+.logo-cont p {
+    font-size: 18px;
+    font-family: Helvetica, Sans-Serif;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.navigation ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+.navigation ul li {
+    margin: 0 15px;
+    font-family: Helvetica, Sans-Serif;
+    cursor: pointer;
+}
+.navigation ul li a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.contact {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.add-property {
+    background-color: transparent;
+    border: 2px solid #1A1A1A;
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 5px 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.add-property:hover {
+    background-color: #333;
+    color: #fff;
+}
+.add-property a{
+    text-decoration: none;
+    color: inherit;
+}
+.centered-text {
+    position: absolute;
+    width: 60%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 2;
+}
+
+.centered-text h1 {
+    font-size: 60px;
+    font-weight: 500;
+    color: #1F4B43;
+    font-family: Helvetica, Sans-Serif;
+    margin: 0;
+}
+
+.search-box {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 45%;
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    z-index: 3;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.search-box input {
+    width: 90%;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    outline: none;
+}
+
+.search-box img {
+    width: 40px;
+    height: 40px;
+    justify-content: flex-end;
+    position: relative;
+}
+.center-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+}
+
+.center-text h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    font-family: Helvetica, Sans-Serif;
+}
+
+.center-text p {
+    font-size: 16px;
+    color:#1A1A1A;
+    font-family: Helvetica, Sans-Serif;
+}
+.reasons{
+    display: flex;
+    padding: 100px;
+    text-align: center;
+    gap: 50px;
+    font-family: Helvetica, Sans-Serif;
+    color: #1A1A1A;
+}
+.reasons h3{
+    font-size: 21px;
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+.reasons div{
+   box-shadow:  rgba(0, 0, 0, 0.24) 0px 3px 8px;
+   padding-bottom: 50px;
+   padding-top: 50px;
+   transition: background-color 0.3s ease, transform 0.3s ease;
+   cursor: pointer;
+}
+.reasons div:hover{
+    transform: scale(1.1);
+}
+.cust-ideas{
+    font-size: 36px;
+    font-weight: 500;
+    padding-bottom: 20px;
+    padding-left: 100px;
+    font-family: Helvetica, Sans-Serif;
+}
+.reviews{
+    display: flex;
+    gap: 50px;
+    padding: 50px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card {
+    background-color: #F9F9F9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+}
+.card:hover{
+    transform: scale(1.1);
+}
+.status{
+    display: flex;
+    gap: 10px;
+}
+.queto{
+    width: 45px;
+    height: 45px;
+}
+.testimonial-text{
+    color: #1A1A1A;
+    line-height: 32px;
+    padding-top: 10px;
+    font-family: Helvetica, Sans-Serif;
+}
+.man{
+    border-radius: 50px;
+}
+.pink-div{
+    background-color: #f5dfdf;
+    display: flex;
+    padding: 150px;
+    gap: 150px;
+}
+.ratings{
+    display: flex;
+    gap: 20px;
+}
+.left-div h1{
+    font-size: 40px;
+    font-weight: 500;
+    font-family: Helvetica, Sans-Serif;
+    padding-bottom: 10px;
+}
+.left-div p{
+    font-size: 16px;
+    color: #1A1A1A;
+    font-family: Helvetica, Sans-Serif;
+    padding-bottom: 10px;
+}
+.left-div h3{
+    font-size: 26px;
+    font-weight: 500;
+}
+.buttons{
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+}
+.companies{
+    background-color: #f5dfdf;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 100px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: Helvetica, Sans-Serif;
+}
+.sponsors{
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    padding-top: 20px;
+    flex-wrap: wrap;
+    cursor: pointer;
+}
+.agents{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 200px;
+    background-color: #f9f9f9;
+    gap: 20px;
+}
+.real-estate{
+    flex: 1;
+    font-family: Helvetica, Sans-Serif;
+
+}
+.real-estate-btn {
+    font-size: 12px;
+    color: #222;
+    padding: 12px 30px;
+    background-color:#E7C873;
+    width: 30%;
+    border-radius: 5px;
+}
+
+.real-estate p {
+    font-size: 16px;
+    margin-bottom: 30px;
+    color: #555;
+}
+.real-estate h1{
+    font-size: 40px;
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+
+.real-estate-btn:hover {
+    background-color: #e0a806;
+}
+.image-cont{
+    position: relative;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image-cont img{
+    width: 350px;
+}
+.team {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    flex-wrap: wrap;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.team-member {
+    text-align: center;
+    width: 25%;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding-bottom: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+}
+.team-member:hover{
+    transform: scale(1.1);
+}
+.team-member img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.team-member h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.team-member p {
+    font-size: 14px;
+    color: #777;
+}
+.companies2{
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 100px;
+    padding-top: 100px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: Helvetica, Sans-Serif;
+}
+.sponsors2{
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    padding-top: 20px;
+    flex-wrap: wrap;
+    cursor: pointer;
+}
+.footer-container{
+    background-color: #1F4B43;
+    width: 100%;
+    padding: 50px;
+    color: white;
+}
+.follow-us{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 19px;
+    font-family: Helvetica, Sans-Serif;
+}
+.upper-div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.symbols img:hover {
+    transform: scale(1.1);
+  }
+.under-div{
+    display: flex;
+    padding-top: 50px;
+    gap: 100px;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+}
+.subscribe {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.input-container {
+    display: flex;
+    border-bottom: 1px solid #FFFFFF14;
+    background-color: #1F4B43;
+    border-radius: 5px;
+    width: 80%;
+    justify-content: space-between;
+}
+.input-container input {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 14px;
+}
+
+.input-container .send-btn {
+    background-color: #16312c;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: background-color 0.4s ease, transform 0.4s ease;
+
+}
+
+.input-container .send-btn:hover {
+    background-color: #0e3825e8;
+    transform: scale(1.05);
+}
+.subscribe p{
+    font-family: Helvetica, Sans-Serif;
+}
+.contact-info{
+    display: flex;
+    gap: 50px;
+    font-family: Helvetica, Sans-Serif;
+}
+.contact-info div ul li{
+    margin-bottom: 20px;
+}
+.contact-info h3 {
+    color: #FFFFFF78;
+    margin-bottom: 10px;
+}
+@media screen and (max-width: 768px){
+    .reasons{
+        flex-direction: column;
+    }
+    .pink-div{
+        flex-direction: column;
+    }
+    .left-div{
+        text-align: center;
+    }
+    .ratings{
+        flex-direction: column;
+    }
+    .testimonial-text{
+        text-align: center;
+    }
+    .buttons{
+        justify-content: center;
+    }
+    .agents{
+        flex-direction: column;
+    }
+    .real-estate {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .real-estate-btn {
+        width: auto;
+    }
+    .team-member{
+        flex-direction: column;
+        width: 60%;
+    }
+    .navigation{
+        display: none;
+    }
+}
